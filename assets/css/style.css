@@ -512,8 +512,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero__scroll {
   position: absolute;
   bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
