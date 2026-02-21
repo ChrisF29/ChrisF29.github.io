@@ -599,6 +599,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .about__content {
   max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .about__content p {
@@ -614,6 +616,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-top: 36px;
   padding-top: 32px;
   border-top: 1px solid var(--clr-border);
+  justify-content: center;
 }
 
 .about__stat {
