@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chris F — Portfolio</title>
+  <meta name="description" content="Professional portfolio of Chris F — Developer, creator, and problem solver." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader" class="preloader">
+    <div class="loader">
+      <span class="loader-ring"></span>
+      <span class="loader-text">CF</span>
+    </div>
+  </div>
+
+  <!-- ===================== CURSOR ===================== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <span class="logo-bracket">&lt;</span>CF<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav__menu" id="navMenu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#hero" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__close" id="navClose"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero section" id="hero">
+    <div class="hero__particles" id="particles"></div>
+    <div class="hero__content container">
+      <div class="hero__data">
+        <span class="hero__greeting">Hello, I'm</span>
+        <h1 class="hero__name">Chris F<span class="accent">.</span></h1>
+        <div class="hero__title-wrapper">
+          <span class="hero__title-prefix">A&nbsp;</span>
+          <span class="hero__title" id="typedText"></span>
+          <span class="hero__cursor">|</span>
+        </div>
+        <p class="hero__description">
+          I build elegant solutions to complex problems. Passionate about clean code,
+          intuitive design, and creating software that makes a difference.
+        </p>
+        <div class="hero__buttons">
+          <a href="#projects" class="btn btn--primary">
+            <span>View My Work</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn--outline">
+            <span>Get in Touch</span>
+          </a>
+        </div>
+        <div class="hero__socials">
+          <a href="https://github.com/ChrisF29" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-wrapper">
+          <div class="hero__image-glow"></div>
+          <div class="hero__image-placeholder">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <div class="hero__floating-badge hero__floating-badge--1">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="hero__floating-badge hero__floating-badge--2">
+          <i class="fa-solid fa-rocket"></i>
+        </div>
+        <div class="hero__floating-badge hero__floating-badge--3">
+          <i class="fa-solid fa-lightbulb"></i>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <div class="hero__scroll-mouse">
+        <div class="hero__scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__subtitle">Get to know me</span>
+        <h2 class="section__title">About Me</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__content" data-reveal>
+          <p>
+            I'm a passionate developer who loves turning ideas into reality through code.
+            With a keen eye for detail and a commitment to quality, I strive to build
+            applications that are not only functional but also delightful to use.
+          </p>
+          <p>
+            When I'm not coding, you can find me exploring new technologies, contributing to
+            open-source projects, or sharpening my problem-solving skills. I believe in
+            continuous learning and staying at the forefront of the ever-evolving tech landscape.
+          </p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-number" data-count="10">0</span><span class="accent">+</span>
+              <span class="about__stat-label">Projects Built</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number" data-count="5">0</span><span class="accent">+</span>
+              <span class="about__stat-label">Technologies</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number" data-count="500">0</span><span class="accent">+</span>
+              <span class="about__stat-label">Contributions</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__info" data-reveal>
+          <div class="about__info-card">
+            <div class="about__info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h3>Education</h3>
+              <p>Computer Science</p>
+            </div>
+          </div>
+          <div class="about__info-card">
+            <div class="about__info-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div>
+              <h3>Experience</h3>
+              <p>Software Development</p>
+            </div>
+          </div>
+          <div class="about__info-card">
+            <div class="about__info-icon"><i class="fa-solid fa-heart"></i></div>
+            <div>
+              <h3>Passion</h3>
+              <p>Building Great Software</p>
+            </div>
+          </div>
+          <div class="about__info-card">
+            <div class="about__info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h3>Location</h3>
+              <p>Available Remotely</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__subtitle">What I work with</span>
+        <h2 class="section__title">Skills & Technologies</h2>
+      </div>
+
+      <div class="skills__grid" data-reveal>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fa-brands fa-html5"></i></div>
+          <h3 class="skill-card__title">HTML5</h3>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h3 class="skill-card__title">CSS3</h3>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fa-brands fa-js"></i></div>
+          <h3 class="skill-card__title">JavaScript</h3>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="80%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fa-brands fa-python"></i></div>
+          <h3 class="skill-card__title">Python</h3>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="75%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fa-brands fa-react"></i></div>
+          <h3 class="skill-card__title">React</h3>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="70%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fa-brands fa-node-js"></i></div>
+          <h3 class="skill-card__title">Node.js</h3>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="70%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fa-brands fa-git-alt"></i></div>
+          <h3 class="skill-card__title">Git</h3>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fa-solid fa-database"></i></div>
+          <h3 class="skill-card__title">Databases</h3>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__subtitle">What I've built</span>
+        <h2 class="section__title">Featured Projects</h2>
+      </div>
+
+      <div class="projects__filters" data-reveal>
+        <button class="projects__filter active" data-filter="all">All</button>
+        <button class="projects__filter" data-filter="web">Web</button>
+        <button class="projects__filter" data-filter="app">App</button>
+        <button class="projects__filter" data-filter="other">Other</button>
+      </div>
+
+      <div class="projects__grid">
+        <article class="project-card" data-category="web" data-reveal>
+          <div class="project-card__image">
+            <div class="project-card__image-placeholder">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__link" aria-label="View live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/ChrisF29" class="project-card__link" aria-label="View code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3 class="project-card__title">Project One</h3>
+            <p class="project-card__description">
+              A responsive web application showcasing modern design principles
+              and smooth user interactions.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="app" data-reveal>
+          <div class="project-card__image">
+            <div class="project-card__image-placeholder">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__link" aria-label="View live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/ChrisF29" class="project-card__link" aria-label="View code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <h3 class="project-card__title">Project Two</h3>
+            <p class="project-card__description">
+              Full-stack application with real-time features, authentication,
+              and a polished user experience.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web" data-reveal>
+          <div class="project-card__image">
+            <div class="project-card__image-placeholder">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__link" aria-label="View live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/ChrisF29" class="project-card__link" aria-label="View code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__tags">
+              <span>Python</span><span>Flask</span><span>D3.js</span>
+            </div>
+            <h3 class="project-card__title">Project Three</h3>
+            <p class="project-card__description">
+              Data visualization dashboard that transforms complex datasets
+              into intuitive, interactive charts.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="other" data-reveal>
+          <div class="project-card__image">
+            <div class="project-card__image-placeholder">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__link" aria-label="View live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/ChrisF29" class="project-card__link" aria-label="View code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__tags">
+              <span>Python</span><span>API</span><span>Automation</span>
+            </div>
+            <h3 class="project-card__title">Project Four</h3>
+            <p class="project-card__description">
+              CLI tool and automation suite that streamlines development
+              workflows and boosts productivity.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="projects__cta" data-reveal>
+        <a href="https://github.com/ChrisF29" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+          <i class="fa-brands fa-github"></i>
+          <span>See More on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header" data-reveal>
+        <span class="section__subtitle">Let's connect</span>
+        <h2 class="section__title">Get in Touch</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info" data-reveal>
+          <p class="contact__text">
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision. Feel free to reach out!
+          </p>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <div class="contact__detail-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:your.email@example.com">your.email@example.com</a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/ChrisF29" target="_blank" rel="noopener noreferrer">github.com/ChrisF29</a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <h3>LinkedIn</h3>
+                <a href="#" target="_blank" rel="noopener noreferrer">Connect with me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" data-reveal>
+          <div class="form__group">
+            <input type="text" id="name" name="name" required placeholder=" " />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form__group">
+            <input type="email" id="email" name="email" required placeholder=" " />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form__group">
+            <input type="text" id="subject" name="subject" required placeholder=" " />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form__group">
+            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a href="#hero" class="footer__logo">
+          <span class="logo-bracket">&lt;</span>CF<span class="logo-bracket">/&gt;</span>
+        </a>
+        <div class="footer__socials">
+          <a href="https://github.com/ChrisF29" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p class="footer__copy">&copy; <span id="year"></span> Chris F. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
