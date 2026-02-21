@@ -592,21 +592,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ──────────────────── ABOUT ──────────────────── */
 .about__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr;
+  gap: 48px;
   align-items: start;
+}
+
+.about__content {
+  max-width: 720px;
 }
 
 .about__content p {
   color: var(--clr-text-light);
   margin-bottom: 20px;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
+  line-height: 1.8;
 }
 
 .about__stats {
   display: flex;
-  gap: 40px;
-  margin-top: 32px;
+  gap: 48px;
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid var(--clr-border);
 }
 
 .about__stat {
@@ -614,7 +621,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .about__stat-number {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 800;
   letter-spacing: -.02em;
   display: block;
@@ -630,15 +637,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .about__info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .about__info-card {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   gap: 16px;
-  padding: 24px;
+  padding: 28px 24px;
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
   border-radius: var(--radius);
@@ -652,26 +659,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .about__info-icon {
-  width: 44px;
-  height: 44px;
-  min-width: 44px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
   border-radius: var(--radius-sm);
   background: rgba(var(--clr-accent-rgb), .08);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--clr-accent);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .about__info-card h3 {
-  font-size: .95rem;
-  margin-bottom: 2px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .about__info-card p {
-  font-size: .85rem;
+  font-size: .9rem;
   color: var(--clr-text-light);
+  line-height: 1.7;
 }
 
 /* ──────────────────── SKILLS ──────────────────── */
@@ -1090,6 +1099,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero__image-wrapper { width: 260px; height: 260px; }
 
   .about__grid { grid-template-columns: 1fr; }
+  .about__info { grid-template-columns: repeat(2, 1fr); }
   .about__stats { justify-content: center; }
 
   .skills__grid { grid-template-columns: repeat(3, 1fr); }
@@ -1126,7 +1136,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   .skills__grid { grid-template-columns: repeat(2, 1fr); }
   .projects__grid { grid-template-columns: 1fr; }
-  .about__info { grid-template-columns: 1fr; }
+  .about__info { grid-template-columns: 1fr 1fr; }
   .about__stats { flex-wrap: wrap; gap: 24px; }
 }
 
@@ -1134,6 +1144,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero__name { font-size: 2.2rem; }
   .hero__image-wrapper { width: 200px; height: 200px; }
   .hero__floating-badge { width: 40px; height: 40px; font-size: 1rem; }
+  .about__info { grid-template-columns: 1fr; }
   .about__stats { gap: 20px; }
   .about__stat-number { font-size: 1.6rem; }
   .skills__grid { grid-template-columns: 1fr 1fr; gap: 12px; }
