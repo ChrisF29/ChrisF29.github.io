@@ -464,6 +464,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: rgba(255,255,255,.3);
 }
 
+.hero__image-photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .hero__floating-badge {
   position: absolute;
   width: 52px;
