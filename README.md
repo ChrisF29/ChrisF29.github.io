@@ -93,6 +93,15 @@ A client-based wedding website with event details, entourage listings, and an RS
 
 ---
 
+## 🧪 Side Projects
+
+| Project | Description | Tech | Links |
+|---------|-------------|------|-------|
+| **Code Playground** | An online code playground for writing and running code in the browser | `TypeScript` | [🌐 Live](https://code-playground-slrpeee.vercel.app/) · [📂 Repo](https://github.com/ChrisF29/Code-Playground) |
+| **Modern SaaS Landing Template** | A clean, modern SaaS landing page template ready to customize | `HTML` `CSS` `JS` | [🌐 Live](https://chrisf29.github.io/modern-saas-landing-template/) · [📂 Repo](https://github.com/ChrisF29/modern-saas-landing-template) |
+
+---
+
 ## 🛠️ Tech Stack
 
 | Category | Technologies |
