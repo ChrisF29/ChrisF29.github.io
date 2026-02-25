@@ -269,6 +269,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ──────── PROJECT IMAGE CAROUSELS ──────── */
+  document.querySelectorAll('.project-card__carousel').forEach(carousel => {
+    const slides = carousel.querySelectorAll('.carousel__slide');
+    const prevBtn = carousel.querySelector('.carousel__btn--prev');
+    const nextBtn = carousel.querySelector('.carousel__btn--next');
+    const dotsContainer = carousel.querySelector('.carousel__dots');
+    let current = 0;
+
+    // Generate dot indicators
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.classList.add('carousel__dot');
+      if (i === 0) dot.classList.add('active');
+      dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+      dot.addEventListener('click', () => goTo(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll('.carousel__dot');
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', (e) => { e.stopPropagation(); goTo(current - 1); });
+    nextBtn.addEventListener('click', (e) => { e.stopPropagation(); goTo(current + 1); });
+  });
+
   /* ──────── FORM HANDLING ──────── */
   const form = document.getElementById('contactForm');
   form.addEventListener('submit', (e) => {
